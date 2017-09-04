@@ -3,6 +3,21 @@ $(document).ready(function() {
 	var wins = 0;
 	var losses = 0;
 
+// Gets Link for Theme Song
+      var audioElement = document.createElement("audio");
+      audioElement.setAttribute("src", "assets/theme.mp3");
+
+      // Theme Button
+      $(".theme-button").on("click", function() {
+        audioElement.play();
+      });
+
+      $(".pause-button").on("click", function() {
+        audioElement.pause();
+      });
+
+
+
 	function varSet() {		//Sets all of the variable values
 		myChar;
 		opponentChar;

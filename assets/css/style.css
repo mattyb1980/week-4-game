@@ -21,6 +21,11 @@ body {
 	color: white;
 }
 
+#music {
+	margin-top: 40px;
+	text-align: center;
+}
+
 .cards {
 	width: 80px;
 }
