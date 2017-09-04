@@ -1,0 +1,70 @@
+body {
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+
+}
+
+
+#logo {
+	margin-top: 40px;
+	width: 80%;
+	margin-left: 40px;
+}
+
+#winslosses {
+	margin-top: 40px;
+	margin-left: 40px;
+	background-color: #ee533c;
+	width: 70%;
+	padding: 30px 0 30px 0;
+	opacity: .8;
+	color: white;
+}
+
+.cards {
+	width: 80px;
+}
+
+.character {
+	border-style: solid;
+	border-color: black;
+	background-color: #FFFBDE;
+}
+
+.hero {
+	background-color: #FFF880;
+}
+
+.fighting {
+	background-color: #FF534F;
+}
+
+#selector {
+	opacity: 0.8;
+	background-color: #99b4c7;
+	width: 550px;
+	height: 250px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.theCenter {
+	margin: 0 auto;
+	padding: 30px;
+}
+
+#attack {
+	margin-top: 20px;
+	font-family: 'Lumos';
+	font-size: 24px;
+}
+
+#restart {
+	font-family: 'Lumos';
+	font-size: 22px;
+}
+
+#whathappens {
+	background-color: #ee533c;
+	font-family: "Helvetica";
+}

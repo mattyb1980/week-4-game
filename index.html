@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Simpsons RPG</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+
+</head>
+<body>
+
+	<div class="row">
+		<div class="col-lg-3">
+			<img id="logo" src="assets/images/logo.png">
+		</div>
+		<div class="col-lg-3 col-lg-offset-6">
+			<div class="text-center">
+				<div id="winslosses">Overall Wins: 0 &nbsp; &nbsp;Loses: 0
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="container">
+	<div class="row">
+			<h2 id="instruction" class="text-center"></h2>
+		<div id="selector" class="text-center"></div>
+	</div>
+
+	<div class="row">
+		<div id="user" class="col-lg-4" align="center"></div>
+		<div class="col-lg-4" align="center">
+			<button id="attack" type="button" class="btn btn-danger" value=attack>Attack</button><br><br>
+			<button id="restart" type="button" class="btn btn-info" value=restart>Restart</button><br><br>
+			<div id="whathappens"></div><br>
+		</div>
+		<div id="enemy" class="col-lg-4" align="center"></div>
+	</div>
+	
+</div>
+
+
+
+
+
+<script src="assets/javascript/game.js" type="text/javascript">
+</script>
+
+</body>
+</html>
