@@ -46,7 +46,7 @@ $(document).ready(function() {
 		}
 
 		$("#selector").html(choices);
-		$("#instruction").html("Click to choose your Springfieldian");
+		$("#instruction").html("Click to choose your Springfieldian!");
 
 		$(".hero").remove();
 		$(".fighting").remove();
