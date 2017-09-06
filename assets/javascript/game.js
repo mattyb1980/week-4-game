@@ -58,7 +58,7 @@ $(document).ready(function() {
 			name: "EvilKrusty",
 			pic: 'assets/images/evilkrusty.png',
 			hitPoints: 95,
-			attackPower: 40 
+			attackPower: 32 
 		} ]; 
 
 		haveCharacter = false;
