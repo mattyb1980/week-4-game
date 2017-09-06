@@ -1,7 +1,6 @@
 body {
 	background-image: url(../images/bg.jpg);
 	background-size: cover;
-
 }
 
 
@@ -47,7 +46,7 @@ body {
 #selector {
 	opacity: 0.8;
 	background-color: #99b4c7;
-	width: 550px;
+	width: 700px;
 	height: 250px;
 	margin: 0 auto;
 	padding: 30px;
@@ -69,7 +68,10 @@ body {
 	font-size: 22px;
 }
 
-#whathappens {
+#whatHappens {
 	background-color: #ee533c;
+	color: white;
+	padding-top: 10px;
+	height: 100px;
 	font-family: "Helvetica";
 }

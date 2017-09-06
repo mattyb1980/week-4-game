@@ -47,12 +47,24 @@ $(document).ready(function() {
 			pic: 'assets/images/selma.png',
 			hitPoints: 140,
 			attackPower: 9 
-		} ];
+		}, {
+			id: 4,
+			name: "SideshowBob",
+			pic: 'assets/images/sideshowbob.png',
+			hitPoints: 135,
+			attackPower: 24 
+		}, {
+			id: 5,
+			name: "EvilKrusty",
+			pic: 'assets/images/evilkrusty.png',
+			hitPoints: 95,
+			attackPower: 40 
+		} ]; 
 
 		haveCharacter = false;
 		haveAttacker = false;
-		numEnemies = 3;
-		rounds = 7;
+		numEnemies = 5;
+		rounds = 20;
 
 		for(var i = 0; i < enemyArray.length; i++) {
 			choices += "<div id=" + enemyArray[i].id + " class='btn character text-center' value=" + enemyArray[i].id +
