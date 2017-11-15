@@ -4,8 +4,9 @@ $(document).ready(function() {
 	var losses = 0;
 
 // Gets Link for Theme Song
+
       var audioElement = document.createElement("audio");
-      audioElement.setAttribute("src", "assets/theme.mp3");
+      audioElement.setAttribute("src", "assets/sounds/theme.mp3");
 
       // Theme Button
       $(".theme-button").on("click", function() {
@@ -64,13 +65,15 @@ $(document).ready(function() {
 		haveCharacter = false;
 		haveAttacker = false;
 		numEnemies = 5;
-		rounds = 20;
+		rounds = 6;
 
 		for(var i = 0; i < enemyArray.length; i++) {
 			choices += "<div id=" + enemyArray[i].id + " class='btn character text-center' value=" + enemyArray[i].id +
 			"><img class='cards' src=" + enemyArray[i].pic + " alt=" + enemyArray[i].name + "><br> HP: " + enemyArray[i].hitPoints +
 			"<br> AP: " + enemyArray[i].attackPower + " </div>";
 		}
+
+		
 
 		$("#selector").html(choices);
 		$("#instruction").html("Click to choose your Springfieldian!");
@@ -80,6 +83,48 @@ $(document).ready(function() {
 		$("#whatHappens").html("");
 
 		attachCharacterOnClick();
+		// Audio for Bart
+		var bartAudio = document.createElement("audio");
+	    bartAudio.setAttribute("src", "assets/sounds/coolman.mp3");
+
+	    $("#0").on("click", function() {
+	    bartAudio.play();
+	    });
+	    // Audio for Homer
+		var homerAudio = document.createElement("audio");
+	    homerAudio.setAttribute("src", "assets/sounds/woohoo.mp3");
+
+	    $("#1").on("click", function() {
+	    homerAudio.play();
+	    });
+	    // Audio for Mr. Burns
+	    var burnsAudio = document.createElement("audio");
+	    burnsAudio.setAttribute("src", "assets/sounds/pishposh.mp3");
+
+	    $("#2").on("click", function() {
+	    burnsAudio.play();
+	    });
+	    // Audio for Selma
+	    var selmaAudio = document.createElement("audio");
+	    selmaAudio.setAttribute("src", "assets/sounds/selma.mp3");
+
+	    $("#3").on("click", function() {
+	    selmaAudio.play();
+	    });
+	    // Audio for Sideshow Bob
+	    var sideshowbobAudio = document.createElement("audio");
+	    sideshowbobAudio.setAttribute("src", "assets/sounds/sideshowbob.mp3");
+
+	    $("#4").on("click", function() {
+	    sideshowbobAudio.play();
+	    });
+	    // Audio for Krusty
+	    var krustyAudio = document.createElement("audio");
+	    krustyAudio.setAttribute("src", "assets/sounds/krlaugh.mp3");
+
+	    $("#5").on("click", function() {
+	    krustyAudio.play();
+	    });
 	}
 
 	function printCharacters() {
@@ -125,6 +170,7 @@ $(document).ready(function() {
 	}
 
 	$("#attack").on("click", function() {
+
 		if(!haveCharacter) {
 			$("#whatHappens").html("You need to pick your fighter first!");
 		}
@@ -136,6 +182,10 @@ $(document).ready(function() {
 			enemyArray[opponentChar].hitPoints  = enemyArray[opponentChar].hitPoints - enemyArray[myChar].attackPower;	//Hit Them
 			enemyArray[myChar].hitPoints = enemyArray[myChar].hitPoints - enemyArray[opponentChar].attackPower;	//Get Hit
 
+	    	var punchAudio = document.createElement("audio");
+	    	punchAudio.setAttribute("src", "assets/sounds/punches.mp3");
+			punchAudio.play();
+	    	
 
 			if(enemyArray[opponentChar].hitPoints < 0) {
 				numEnemies--;
